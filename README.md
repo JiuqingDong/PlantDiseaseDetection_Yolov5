@@ -13,7 +13,7 @@ The code include YOLO-v5 implement, Noise generation, Data-augmentation by rotat
 
 You also can refer to the Official implement of YOLO-v5. https://github.com/ultralytics/yolov5
 
-You need modify the path of the data according your own datasets.
+You need to modify the path to be able to run on your dataset.
 
 # Install
 
