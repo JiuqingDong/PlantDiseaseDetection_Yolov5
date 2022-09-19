@@ -1,3 +1,4 @@
+# Note
 This repository includes the official implementation of the paper:
 
 Data-centric Annotation Analysis for Plant Disease Detection: Strategy, Consistency, and Performance.
@@ -11,6 +12,8 @@ Jiuqing Dong 1, Jaehwan Lee1, 2, Alvaro Fuentes 1,2, Sook Yoon 3,, Mun Haeng Lee
 The code include YOLO-v5 implement, Noise generation, Data-augmentation by rotation, Visualization module, and Label processing part. In addition, we will provide the pretrained model of our paprika dataset. However, due to non-disclosure agreements, we are temporarily unable to make the dataset public.
 
 You also can refer to the Official implement of YOLO-v5. https://github.com/ultralytics/yolov5
+
+You need modify the path of the data according your own datasets.
 
 # Install
 
