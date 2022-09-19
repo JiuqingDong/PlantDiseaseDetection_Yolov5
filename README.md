@@ -2,7 +2,7 @@ This repository includes the official implementation of the paper:
 
 Data-centric Annotation Analysis for Plant Disease Detection: Strategy, Consistency, and Performance.
 
-(Under Review)
+(State: Under Review)
 
 Authors and affiliations:
 
@@ -27,7 +27,7 @@ python train.py --img 640 --batch 16 --epochs 200 --data data/paprika_v4.yaml --
 --project: a folder for saving output
 
 # Test
-python test.py --data data/paprika_v4.yaml --weights paprika_v4/x/exp/weights/best.pt --device 2 --project paprika_v4/x_a
+python test.py --data data/paprika_v4.yaml --weights paprika_v4/x/exp/weights/best.pt --device 2 --project paprika_v4/x
 
 # Detect
 python detect.py --source /home/multiai3/Jiuqing/yolo5-official-new/datasets/paprika_v4/images/test --weights paprika_v4/x/exp/weights/best.pt --device 2 --project paprika_v4/x
@@ -36,3 +36,20 @@ python detect.py --source /home/multiai3/Jiuqing/yolo5-official-new/datasets/pap
 # Visualization
 python detect_visualization.py --source /home/multiai3/Jiuqing/yolo5-official-new/datasets/paprika_v4/images/test --weights paprika_v4/x/exp/weights/best.pt --device 2 --project paprika_v4/x
 --source: source of image. 
+
+# noise generation:
+Please refer to ./tools/process_labels/noise*.py
+
+# Data augmentation
+Please refer to ./tools/process_images/data_aug_*.py
+
+# Split the datasets
+Please refer to ./tools/process_images/split_the_datasets.py
+
+# Modify orientatiion
+Please refer to https://medium.com/@ageitgey/the-dumb-reason-your-fancy-computer-vision-app-isnt-working-exif-orientation-73166c7d39da
+If you don't have this problem, please ignore this.
+Otherwise, please refer to ./tools/process_images/modify_orientation.py
+
+
+
