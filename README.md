@@ -15,26 +15,35 @@ You also can refer to the Official implement of YOLO-v5.
 # Install
 
 Clone repo and install requirements.txt in a Python>=3.7.0 environment, including PyTorch>=1.7.
+
 cd yolov5
+
 pip install -r requirements.txt  # install
 
 # Train Paprika
 
 python train.py --img 640 --batch 16 --epochs 200 --data data/paprika_v4.yaml --cfg models/yolov5x.yaml --weights weights/yolov5x.pt --device 1 --project paprika_v4/x
+
 --data: the configuration of training.
+
 -- weights: the pre-trained model
+
 --divice: GPU index
+
 --project: a folder for saving output
+
 
 # Test
 python test.py --data data/paprika_v4.yaml --weights paprika_v4/x/exp/weights/best.pt --device 2 --project paprika_v4/x
 
 # Detect
 python detect.py --source /home/multiai3/Jiuqing/yolo5-official-new/datasets/paprika_v4/images/test --weights paprika_v4/x/exp/weights/best.pt --device 2 --project paprika_v4/x
+
 --source: source of image. 
 
 # Visualization
 python detect_visualization.py --source /home/multiai3/Jiuqing/yolo5-official-new/datasets/paprika_v4/images/test --weights paprika_v4/x/exp/weights/best.pt --device 2 --project paprika_v4/x
+
 --source: source of image. 
 
 # noise generation:
@@ -48,7 +57,9 @@ Please refer to ./tools/process_images/split_the_datasets.py
 
 # Modify orientatiion
 Please refer to https://medium.com/@ageitgey/the-dumb-reason-your-fancy-computer-vision-app-isnt-working-exif-orientation-73166c7d39da
+
 If you don't have this problem, please ignore this.
+
 Otherwise, please refer to ./tools/process_images/modify_orientation.py
 
 
