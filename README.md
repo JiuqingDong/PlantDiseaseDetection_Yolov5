@@ -46,9 +46,6 @@ python detect_visualization.py --source /home/multiai3/Jiuqing/yolo5-official-ne
 
 --source: source of image. 
 
-# noise generation:
-Please refer to ./tools/process_labels/noise*.py
-
 # Data augmentation
 Please refer to ./tools/process_images/data_aug_*.py
 
@@ -62,5 +59,14 @@ If you don't have this problem, please ignore this.
 
 Otherwise, please refer to ./tools/process_images/modify_orientation.py
 
+# noise generation:
+Please refer to ./tools/process_labels/noise*.py
 
+# calculate the instance
+Please refer to ./tools/process_labels/calculate_bounding_box.py
 
+# Show your annotations
+Please refer to ./tools/show_xml/*.py
+
+# Pre-trained model
+The pretrained model will be released as soon as possible.
