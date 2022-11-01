@@ -3,7 +3,7 @@ This repository includes the official implementation of the paper:
 
 Data-centric Annotation Analysis for Plant Disease Detection: Strategy, Consistency, and Performance.
 
-(State: Under Review)
+(State: Review finalized, On Frontier in Plant Science)
 
 Authors and affiliations:
 
